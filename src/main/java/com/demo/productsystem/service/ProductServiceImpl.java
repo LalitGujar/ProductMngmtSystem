@@ -1,4 +1,4 @@
-package com.productsystem.service;
+package com.demo.productsystem.service;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,13 +7,13 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import com.productsystem.dto.ProductPatchDto;
-import com.productsystem.dto.ProductRequestDto;
-import com.productsystem.dto.ProductResponseDto;
-import com.productsystem.exception.DuplicateProductException;
-import com.productsystem.exception.ProductNotFoundException;
-import com.productsystem.model.Product;
-import com.productsystem.repository.ProductRepository;
+import com.demo.productsystem.dto.ProductPatchDto;
+import com.demo.productsystem.dto.ProductRequestDto;
+import com.demo.productsystem.dto.ProductResponseDto;
+import com.demo.productsystem.exception.DuplicateProductException;
+import com.demo.productsystem.exception.ProductNotFoundException;
+import com.demo.productsystem.model.Product;
+import com.demo.productsystem.repository.ProductRepository;
 
 import lombok.RequiredArgsConstructor;
 

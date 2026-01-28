@@ -1,4 +1,4 @@
-package com.productsystem.exception;
+package com.demo.productsystem.exception;
 
 public class DuplicateProductException extends RuntimeException {
     public DuplicateProductException(String name) {

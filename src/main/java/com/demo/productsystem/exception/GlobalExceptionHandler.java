@@ -1,4 +1,4 @@
-package com.productsystem.exception;
+package com.demo.productsystem.exception;
 
 import java.util.HashMap;
 import java.util.Map;

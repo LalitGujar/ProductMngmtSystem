@@ -1,4 +1,4 @@
-package com.productsystem.exception;
+package com.demo.productsystem.exception;
 
 public class ProductNotFoundException extends RuntimeException {
     public ProductNotFoundException(Long id) {

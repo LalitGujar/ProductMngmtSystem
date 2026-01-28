@@ -1,4 +1,4 @@
-package com.productsystem.controller;
+package com.demo.productsystem.controller;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,10 +19,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.productsystem.dto.ProductPatchDto;
-import com.productsystem.dto.ProductRequestDto;
-import com.productsystem.dto.ProductResponseDto;
-import com.productsystem.service.ProductService;
+import com.demo.productsystem.dto.ProductPatchDto;
+import com.demo.productsystem.dto.ProductRequestDto;
+import com.demo.productsystem.dto.ProductResponseDto;
+import com.demo.productsystem.service.ProductService;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -39,7 +39,7 @@ public class ProductController {
 		this.service = service;
 	}
 
-	@PostMapping
+	@PostMapping("/addProduct")
     public ResponseEntity<ProductResponseDto> create(@Valid @RequestBody ProductRequestDto dto){
         return new ResponseEntity<>(service.createProduct(dto), HttpStatus.CREATED);
     }

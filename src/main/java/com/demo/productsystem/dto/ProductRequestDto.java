@@ -1,4 +1,4 @@
-package com.productsystem.dto;
+package com.demo.productsystem.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Positive;

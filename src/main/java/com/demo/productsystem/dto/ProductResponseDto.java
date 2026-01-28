@@ -1,4 +1,4 @@
-package com.productsystem.dto;
+package com.demo.productsystem.dto;
 
 public class ProductResponseDto {
 

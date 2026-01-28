@@ -1,12 +1,12 @@
-package com.productsystem.service;
+package com.demo.productsystem.service;
 
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
-import com.productsystem.dto.ProductPatchDto;
-import com.productsystem.dto.ProductRequestDto;
-import com.productsystem.dto.ProductResponseDto;
+import com.demo.productsystem.dto.ProductPatchDto;
+import com.demo.productsystem.dto.ProductRequestDto;
+import com.demo.productsystem.dto.ProductResponseDto;
 
 public interface ProductService {
 	
