@@ -11,6 +11,7 @@ import com.productsystem.dto.ProductPatchDto;
 import com.productsystem.dto.ProductRequestDto;
 import com.productsystem.dto.ProductResponseDto;
 import com.productsystem.exception.DuplicateProductException;
+import com.productsystem.exception.ProductNotFoundException;
 import com.productsystem.model.Product;
 import com.productsystem.repository.ProductRepository;
 
@@ -83,9 +84,8 @@ public class ProductServiceImpl implements ProductService {
 		repository.save(product);
 	}
 
-	
 	private Product findProduct(Long id) {
-		return repository.findById(id).orElseThrow();
+		return repository.findById(id).orElseThrow(() -> new ProductNotFoundException(id));
 	}
 
 	private ProductResponseDto mapToDto(Product product) {
