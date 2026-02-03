@@ -82,7 +82,9 @@ public class Product {
 		return "Product [id=" + id + ", name=" + name + ", price=" + price + ", quantity=" + quantity + ", category="
 				+ category + ", deleted=" + deleted + "]";
 	}
-	
-	
 
+	public Product() {
+		super();
+	}
+	
 }

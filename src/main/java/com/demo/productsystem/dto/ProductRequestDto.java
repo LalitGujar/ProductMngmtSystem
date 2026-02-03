@@ -68,7 +68,5 @@ public class ProductRequestDto {
 	public ProductRequestDto() {
 		super();
 	}
-    
-    
 
 }
