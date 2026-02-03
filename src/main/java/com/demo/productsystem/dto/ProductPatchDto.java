@@ -42,6 +42,11 @@ public class ProductPatchDto {
 		this.quantity = quantity;
 		this.category = category;
 	}
+	public ProductPatchDto() {
+		super();
+	}
+	
+	
 	
 	
 }

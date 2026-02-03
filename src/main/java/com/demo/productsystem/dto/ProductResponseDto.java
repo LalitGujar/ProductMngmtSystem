@@ -51,6 +51,9 @@ public class ProductResponseDto {
 		return "ProductResponseDto [id=" + id + ", name=" + name + ", price=" + price + ", quantity=" + quantity
 				+ ", category=" + category + "]";
 	}
-    
+	
+	public ProductResponseDto() {
+		super();
+	}   
     
 }

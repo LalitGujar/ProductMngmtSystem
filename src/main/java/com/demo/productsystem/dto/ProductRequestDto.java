@@ -64,6 +64,10 @@ public class ProductRequestDto {
 		return "ProductRequestDto [name=" + name + ", price=" + price + ", quantity=" + quantity + ", category="
 				+ category + "]";
 	}
+
+	public ProductRequestDto() {
+		super();
+	}
     
     
 
